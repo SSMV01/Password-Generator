@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a4b0949971.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <title> PWD GENERATOR </title>
+</head>
+<body>
+
+    <div class="copy-div">
+        <h3 id="copy-txt">Copied!</h3>
+    </div>
+
+    <div class="error-div">
+        <h3 id="error">Please enter a number between 5 and 12 only.</h3>
+    </div>
+
+    <div class="left">
+
+        <div class="theme-bar">
+            <!-- <i class="fa-solid fa-sun"></i> -->
+            <button id="theme-btn"><i id="icon" class="fa-solid fa-moon"></i></button>
+        </div>
+
+        <div class="txt">
+        <h1 id="gen" class="">Generate a</h1>
+        <h1 class="rnd-pwd">random password</h1>
+        <p class="small">Never use an insecure password again.</p>
+        <br>
+        <button id="btn" onclick="randomPwd()"><img src="icons/bolt.png"> Generate passwords</button> <input type="number" name="chars" id="input-txt" placeholder="Set Limit (5-12)"> <br>
+        </div>
+
+
+        <div class="line"></div>
+
+        <div class="container">
+            <div class="l">
+                <div class="box"><p class="para"><i class="fa-solid fa-ellipsis"></i></p><button class="copy1" title="click to copy" onclick="copied1()"><i class="fa-solid fa-copy"></i></button></div>
+                <div class="box"><p class="para"><i class="fa-solid fa-ellipsis"></i></p><button class="copy2" title="click to copy" onclick="copied2()"><i class="fa-solid fa-copy"></i></button></div>
+            </div>
+            <div class="r">
+                <div class="box"><p class="para"><i class="fa-solid fa-ellipsis"></i></p><button class="copy3" title="click to copy" onclick="copied3()"><i class="fa-solid fa-copy"></i></button></div>
+                <div class="box"><p class="para"><i class="fa-solid fa-ellipsis"></i></p><button class="copy4" title="click to copy" onclick="copied4()"><i class="fa-solid fa-copy"></i></button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

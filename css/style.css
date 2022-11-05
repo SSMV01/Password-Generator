@@ -1,0 +1,377 @@
+/* GLOBAL */
+
+::selection {
+    background-color: #10B981;
+    color: #1F2937;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla.ttf') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla';
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* COPIED! TEXT */
+
+.copy-div {
+    position: absolute;
+    top: 0;
+    right: -101px;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    background-color: #10B981;
+    color: #2B283A;
+    border: 1px solid #1c1c1c;
+    border-radius: 0 0 0 6px;
+}
+
+.active {
+    right: -1px;
+}
+
+/* ERROR */
+
+.error-div {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    background-color: #10B981;
+    color: #2B283A;
+    width: 500px;
+    height: 26px;
+    border-radius: 0 0 6px 0;
+    transition: 1s;
+}
+
+.showError {
+    left: 0;
+}
+
+/* THEME BAR */
+
+.theme-bar {
+    position: relative;
+    top: 20px;
+    left: 95%;
+}
+
+#theme-btn {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.fa-moon {
+    color: #fff;
+    transition: 0.3s;
+}
+
+#theme-btn:active .fa-moon{
+    color: #999999;
+}
+
+#theme-btn:active .fa-sun{
+    color: #202020;
+}
+
+.fa-moon:hover, .fa-sun:hover{
+    cursor: pointer;
+}
+
+.fa-sun {
+    color: #1F2937;
+    transition: 0.3s;
+}
+
+/* MAIN */
+
+.left {
+    background-color: #1F2937;
+    width: 75%;
+    height: 550px;
+    margin: 70px auto;
+    border-radius: 1px;
+    transition: 0.3s;
+}
+
+.white {
+    background-color: #b6c4bd;
+}
+
+/* TEXT */
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+#gen {
+    position: relative;
+    top: 75px;
+    left: 90px;
+}
+
+.gen-white {
+    color: #2B283A;
+}
+
+.rnd-pwd {
+    color: #4ADF86;
+    position: relative;
+    top: 75px;
+    left: 90px;
+}
+
+.rnd-white {
+    color: #10B981;
+}
+
+.small {
+    font-size: 20px;
+    position: relative;
+    top: 75px;
+    left: 100px;
+    color: #D5D4D8;
+}
+
+.small-white {
+    color: #1c1c1c;
+}
+
+#btn {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 223px;
+    height: 42px;
+    color: #fff;
+    background-color: #10B981;
+    font-size: 18px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+#btn img {
+    position: relative;
+    top: 2px;
+    left: -5px;
+    width: 18px;
+    padding: 0;
+    transform: rotate(5deg);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout : none;
+    -o-user-select: none;
+    -ms-user-select: none;
+}
+
+#btn:active {
+    background-color: #4ADF86;
+}
+
+#input-txt {
+    position: relative;
+    top: 99px;
+    left: 105px;
+    text-align: center;
+    height: 42px;
+    width: 100px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #10B981;
+    border-radius: 6px;
+    -webkit-appearance: textfield;
+}
+
+#input-txt:focus {
+    outline: 1px solid #10B981;
+}
+
+#input-txt::-webkit-outer-spin-button,
+#input-txt::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* LINE*/
+
+.line {
+    position: relative;
+    top: 135px;
+    left: 65px;
+    width: 450px;
+    height: 1px;
+    background-color: #2F3E53;
+}
+
+.line-white {
+    background-color: #D5D4D8;
+}
+
+/* PASSWORD BOXES */
+
+.container {
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: 60px;
+    width: 460px;
+}
+
+.container p {
+    position: relative;
+    top: 8px;
+    left: -20px;
+}
+
+.container .fa-ellipsis {
+    position: relative;
+    top: -8px;
+    font-size: 40px;
+    color: #202B3C;
+}
+
+.box {
+    text-align: center;
+    font-size: 20px;
+    background-color: #273549;
+    width: 210px;
+    height: 40px;
+    margin: 35px 10px;
+    border: none;
+    border-radius: 6px;
+    color: #55F991;
+}
+
+.copy1, .copy2, .copy3, .copy4 {
+    background-color: transparent;
+    color: #202B3C;
+    border: none;
+    border-left: 1px solid #202B3C;
+    height: 40px;
+    width: 42px;
+    border-radius: 0 6px 6px 0;
+}
+
+.copy1 {
+    position: absolute;
+    top: 35px;
+    left: 178px;
+}
+
+.copy2 {
+    position: absolute;
+    top: 110px;
+    left: 178px;
+}
+
+.copy3 {
+    position: absolute;
+    top: 35px;
+    left: 408px;
+}
+
+.copy4 {
+    position: absolute;
+    top: 110px;
+    left: 408px;
+}
+
+.copy1:hover, .copy2:hover, .copy3:hover, .copy4:hover  {
+    cursor: pointer;
+}
+
+/* 
+.change {
+    color: #3F516B;
+} */
+
+@media (max-width: 768px) {
+    .theme-bar {
+        left: 95%;
+    }
+
+    #input-txt {
+        width: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* THEME BAR */
+
+    .theme-bar {
+        left: 93%;
+    }
+
+    /* TEXT */
+
+    #gen {
+        left: 5px;
+    }
+
+    .rnd-pwd {
+        left: 5px;
+    }
+
+    .small {
+        left: 15px;
+    }
+
+    #btn {
+        left: 15px;
+    }
+
+    /* LINE */
+
+    .line {
+        left: 10px;
+        width: 320px; 
+    }
+
+    /* PASSWORD BOXES */
+
+    .container {
+        left: 10px;
+        top: 135px;
+    }
+
+    .box {
+        margin-top: 10px;
+    }
+
+    .copy1 {
+        top: 10px;
+    }
+
+    .copy2 {
+        top: 85px;
+    }
+
+    .r {
+       display: none;
+    }
+
+    #input-txt {
+        left: 20px;
+    }
+
+}
