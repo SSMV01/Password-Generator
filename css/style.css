@@ -196,7 +196,7 @@ h1 {
     height: 42px;
     width: 100px;
     background-color: transparent;
-    color: #fff;
+    color: #FFFFFF;
     border: 1px solid #10B981;
     border-radius: 6px;
     -webkit-appearance: textfield;
@@ -374,4 +374,26 @@ h1 {
         left: 20px;
     }
 
+}
+
+
+/* FOOTER */
+
+footer {
+    color: #999999;
+    display: flex;
+    padding: 10px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -60px;
+}
+
+footer a {
+    color:#999999;
+    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #999999;
 }
