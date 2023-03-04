@@ -381,12 +381,17 @@ h1 {
 
 footer {
     color: #999999;
+    text-align: center;
     display: flex;
     padding: 10px;
-    width: 425px;
+    width: 500px;
     margin-right: auto;
     margin-left: auto;
     margin-top: -60px;
+}
+
+footer p {
+    width: 415px;
 }
 
 footer a {
